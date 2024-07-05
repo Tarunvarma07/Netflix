@@ -1,15 +1,21 @@
 *{
     font-family:Arial, Helvetica, sans-serif;
     color: #ffffff;
-}
 
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+}
 
 
 .main-div
 {
     background-image:linear-gradient(rgba(0,0,0,0.7),rgb(0,0,0,0.7)),url(images/netflix2.png);
     width: 100%;
-    height: 65vh;
+    height: 85vh;
     background-size: cover;
 }
 .navbar
@@ -94,27 +100,9 @@
     width: 100%;
     height: 68vh;
     display: flex;
-    padding-top: 10%;
-}
-.solo
-{
-    color:white;
-    font-family: Arial;
-    font-size: 20px;
-    position: center;
     align-items: center;
+    justify-content: space-evenly;
 }
-.solo h1{
-    margin-left: 150px;
-}
-.solo h3{
-    margin-left: 150px;
-}
-.one{
-    position: absolute;
-    left:52%;
-}
-
 .line2
 {
     border-top: 8px solid #414141;
@@ -127,32 +115,14 @@
     width: 100%;
     height: 68vh;
     display: flex;
-    padding-top: 10%;
-}
-.duo{
-    position: absolute;
-    right:62%;
-}
-.duo img{
-    height: 400px;
-    width: 400px;
-}
-
-.two
-{
-    color:white;
-    font-family: Arial;
-    font-size: 20px;
-    position: absolute;
-    left: 32%;
+    justify-content: space-evenly;
     align-items: center;
 }
-.two h1{
-    margin-left:150px;
+.matter2 img{
+    height: 300px;
+    width: 300px;
 }
-.two h3{
-    margin-left:150px;
-}
+
 .line3
 {
     border-top: 8px solid #414141;
@@ -165,27 +135,12 @@
     width: 100%;
     height: 68vh;
     display: flex;
-    padding-top: 10%;
-}
-.trio
-{
-    color:white;
-    font-family: Arial;
-    font-size: 20px;
-    position: center;
+    justify-content: space-evenly;
     align-items: center;
 }
-.trio h1{
-    margin-left: 150px;
-}
-.trio h3{
-    margin-left: 150px;
-}
-.three{
-    position: absolute;
-    left:52%;
-    margin-bottom: 10%;
-    transform: scale(0.8);
+.matter3 img{
+    height: 300px;
+    width: 300px;
 }
 
 .line4
@@ -200,34 +155,14 @@
     width: 100%;
     height: 68vh;
     display: flex;
-    padding-top: 10%;
-}
-.dynamic
-{
-    color:white;
-    font-family: Arial;
-    font-size: 20px;
-    position: absolute;
-    left: 42%;
     align-items: center;
+    justify-content: space-evenly;
 }
-.dynamic h1{
-    margin-left: 150px;
-}
-.dynamic h3{
-    margin-left: 150px;
-}
-.four{
-    position: absolute;
-    right:52%;
-    margin-bottom: 10%;
-}
-.four{
-    height: 50px;
+.matter4 img{
+    height: 300px;
     width: 300px;
-
-    margin-right: 300px;
 }
+
 .line5
 {
     border-top: 8px solid #414141;
@@ -245,8 +180,10 @@
     text-align: center;
 }
 .position{
-    display:flow-root;
-    padding-left: 170px;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
     
 }
 .fandqs{
@@ -297,6 +234,7 @@
     background-color:#e50914;
     color: #ffffff;
     border-radius: 12px;
+    margin: 10px 0px 0px 70px;
 }
 .text-input{
     display: flex;
@@ -306,7 +244,6 @@
 }
 .line6{
     border-top: 8px solid #414141;
-    margin-top: 50px;
     }
 .footer-class{
     width: 100%;
@@ -333,87 +270,14 @@ footer select{
     font-size: 20px;
 }
 @media screen and (max-width:992px)
-{
-    .solo{
-
-        font-size: 11px;
-        position: absolute;
-        left: -100px;
-        bottom: 70px;
-        
-    }
-    .one{
-
-        position: absolute;
-        left: -20px;
-        bottom: -250px;
-
-        transform: scale(0.7)
-    }
-    .duo {
-        transform: scale(0.7);
-        display: grid;
-        justify-content: center;
-        right: -10px;
-        margin-bottom: 100px;
+{  
+    .body{
+        overflow-x: hidden;
+    }  
+    .items{
+        display: flex;
+        flex-direction: column;
         align-items: center;
-       
-
-
+        text-align: center;
     }
-    .two{
-        display: grid;
-        justify-content: center;
-        position: absolute;
-        left: -80px;
-        margin-top: 350px;
-        font-size: 12px;
-
-    }
-    .trio{
-        position: absolute;
-        left: -90px;
-        font-size: 12px;
-
-    }
-    .three{
-        transform: scale(0.5);
-        display: grid;
-        justify-content: center;
-        position: absolute;
-        right: 290px;
-        margin-top:120px ;
-    }
-    .four{
-        transform: scale(0.7);
-        display: grid;
-        justify-content: center;
-        position: absolute;
-        right: -250px;
-        margin-left: 0px;
-    }
-    .dynamic{
-        display: grid;
-        justify-content: center;
-        position: absolute;
-        left: -80px;
-        height: 10px;
-        width: 100%;
-        margin-top: 320px;
-        margin-right: 400px;
-        font-size: 12px;
-    }
-    .position
-    {
-        position:relative;
-        left: -60px;
-    }
-    .text,.icon1{
-        font-size: 16px;
-    }
-    .line6{
-        margin-top: 0px;
-    }
-    
-    
 }
